@@ -53,6 +53,10 @@
             // 
             // btnCE
             // 
+            this.btnCE.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnCE.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnCE.FlatAppearance.BorderSize = 0;
+            this.btnCE.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCE.Location = new System.Drawing.Point(12, 81);
             this.btnCE.Name = "btnCE";
             this.btnCE.Size = new System.Drawing.Size(65, 60);
@@ -63,6 +67,10 @@
             // 
             // btnC
             // 
+            this.btnC.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnC.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnC.FlatAppearance.BorderSize = 0;
+            this.btnC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnC.Location = new System.Drawing.Point(78, 81);
             this.btnC.Name = "btnC";
             this.btnC.Size = new System.Drawing.Size(65, 60);
@@ -73,6 +81,10 @@
             // 
             // btnDivide
             // 
+            this.btnDivide.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnDivide.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnDivide.FlatAppearance.BorderSize = 0;
+            this.btnDivide.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDivide.Location = new System.Drawing.Point(210, 81);
             this.btnDivide.Name = "btnDivide";
             this.btnDivide.Size = new System.Drawing.Size(65, 60);
@@ -83,6 +95,10 @@
             // 
             // btnDel
             // 
+            this.btnDel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnDel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnDel.FlatAppearance.BorderSize = 0;
+            this.btnDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDel.Location = new System.Drawing.Point(144, 81);
             this.btnDel.Name = "btnDel";
             this.btnDel.Size = new System.Drawing.Size(65, 60);
@@ -93,16 +109,24 @@
             // 
             // btnMultiply
             // 
+            this.btnMultiply.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnMultiply.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnMultiply.FlatAppearance.BorderSize = 0;
+            this.btnMultiply.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMultiply.Location = new System.Drawing.Point(210, 147);
             this.btnMultiply.Name = "btnMultiply";
             this.btnMultiply.Size = new System.Drawing.Size(65, 60);
             this.btnMultiply.TabIndex = 7;
-            this.btnMultiply.Text = "X";
+            this.btnMultiply.Text = "*";
             this.btnMultiply.UseVisualStyleBackColor = true;
             this.btnMultiply.Click += new System.EventHandler(this.onClick);
             // 
             // btn9
             // 
+            this.btn9.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn9.FlatAppearance.BorderSize = 0;
+            this.btn9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn9.Location = new System.Drawing.Point(144, 147);
             this.btn9.Name = "btn9";
             this.btn9.Size = new System.Drawing.Size(65, 60);
@@ -113,6 +137,10 @@
             // 
             // btn8
             // 
+            this.btn8.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn8.FlatAppearance.BorderSize = 0;
+            this.btn8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn8.Location = new System.Drawing.Point(78, 147);
             this.btn8.Name = "btn8";
             this.btn8.Size = new System.Drawing.Size(65, 60);
@@ -123,6 +151,10 @@
             // 
             // btn7
             // 
+            this.btn7.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn7.FlatAppearance.BorderSize = 0;
+            this.btn7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn7.Location = new System.Drawing.Point(12, 147);
             this.btn7.Name = "btn7";
             this.btn7.Size = new System.Drawing.Size(65, 60);
@@ -133,6 +165,10 @@
             // 
             // btnMinus
             // 
+            this.btnMinus.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnMinus.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnMinus.FlatAppearance.BorderSize = 0;
+            this.btnMinus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinus.Location = new System.Drawing.Point(210, 213);
             this.btnMinus.Name = "btnMinus";
             this.btnMinus.Size = new System.Drawing.Size(65, 60);
@@ -143,6 +179,10 @@
             // 
             // btn6
             // 
+            this.btn6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn6.FlatAppearance.BorderSize = 0;
+            this.btn6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn6.Location = new System.Drawing.Point(144, 213);
             this.btn6.Name = "btn6";
             this.btn6.Size = new System.Drawing.Size(65, 60);
@@ -153,6 +193,10 @@
             // 
             // btn5
             // 
+            this.btn5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn5.FlatAppearance.BorderSize = 0;
+            this.btn5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn5.Location = new System.Drawing.Point(78, 213);
             this.btn5.Name = "btn5";
             this.btn5.Size = new System.Drawing.Size(65, 60);
@@ -163,6 +207,10 @@
             // 
             // btn4
             // 
+            this.btn4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn4.FlatAppearance.BorderSize = 0;
+            this.btn4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn4.Location = new System.Drawing.Point(12, 213);
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(65, 60);
@@ -173,6 +221,10 @@
             // 
             // btnPlus
             // 
+            this.btnPlus.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnPlus.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnPlus.FlatAppearance.BorderSize = 0;
+            this.btnPlus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPlus.Location = new System.Drawing.Point(210, 279);
             this.btnPlus.Name = "btnPlus";
             this.btnPlus.Size = new System.Drawing.Size(65, 60);
@@ -183,6 +235,10 @@
             // 
             // btn3
             // 
+            this.btn3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn3.FlatAppearance.BorderSize = 0;
+            this.btn3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn3.Location = new System.Drawing.Point(144, 279);
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(65, 60);
@@ -193,6 +249,10 @@
             // 
             // btn2
             // 
+            this.btn2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn2.FlatAppearance.BorderSize = 0;
+            this.btn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn2.Location = new System.Drawing.Point(78, 279);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(65, 60);
@@ -203,6 +263,10 @@
             // 
             // btn1
             // 
+            this.btn1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn1.FlatAppearance.BorderSize = 0;
+            this.btn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn1.Location = new System.Drawing.Point(12, 279);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(65, 60);
@@ -213,6 +277,10 @@
             // 
             // btnEquals
             // 
+            this.btnEquals.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnEquals.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnEquals.FlatAppearance.BorderSize = 0;
+            this.btnEquals.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEquals.Location = new System.Drawing.Point(210, 345);
             this.btnEquals.Name = "btnEquals";
             this.btnEquals.Size = new System.Drawing.Size(65, 60);
@@ -223,6 +291,10 @@
             // 
             // btnDot
             // 
+            this.btnDot.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnDot.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnDot.FlatAppearance.BorderSize = 0;
+            this.btnDot.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDot.Location = new System.Drawing.Point(144, 345);
             this.btnDot.Name = "btnDot";
             this.btnDot.Size = new System.Drawing.Size(65, 60);
@@ -233,6 +305,10 @@
             // 
             // btn0
             // 
+            this.btn0.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btn0.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btn0.FlatAppearance.BorderSize = 0;
+            this.btn0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn0.Location = new System.Drawing.Point(78, 345);
             this.btn0.Name = "btn0";
             this.btn0.Size = new System.Drawing.Size(65, 60);
@@ -243,6 +319,10 @@
             // 
             // btnPlusMinus
             // 
+            this.btnPlusMinus.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnPlusMinus.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnPlusMinus.FlatAppearance.BorderSize = 0;
+            this.btnPlusMinus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPlusMinus.Location = new System.Drawing.Point(12, 345);
             this.btnPlusMinus.Name = "btnPlusMinus";
             this.btnPlusMinus.Size = new System.Drawing.Size(65, 60);
@@ -253,10 +333,12 @@
             // 
             // display
             // 
-            this.display.Location = new System.Drawing.Point(12, 9);
+            this.display.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.display.Location = new System.Drawing.Point(12, 13);
             this.display.Name = "display";
-            this.display.Size = new System.Drawing.Size(263, 63);
+            this.display.Size = new System.Drawing.Size(263, 65);
             this.display.TabIndex = 20;
+            this.display.Text = "0";
             this.display.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Calculator

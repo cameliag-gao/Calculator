@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Collections;
 
 namespace Calculator
 {
@@ -17,9 +18,10 @@ namespace Calculator
             InitializeComponent();
         }
 
-        public string prevEquation = "";
-        public string prevOperation = "";
-        public string operation = "";
+        // Public Variables
+        public string workingSet = "";
+        public ArrayList wholeEquation = new ArrayList();
+
 
         private void onClick(object sender, EventArgs e)
         {
@@ -27,65 +29,82 @@ namespace Calculator
 
             switch(btn.Text)
             {
-                case "0":
-                    display.Text += "0";
-                    break;
-                case "1":
-                    display.Text += "1";
-                    break;
-                case "2":
-                    display.Text += "2";
-                    break;
-                case "3":
-                    display.Text += "3";
-                    break;
-                case "4":
-                    display.Text += "4";
-                    break;
-                case "5":
-                    display.Text += "5";
-                    break;
-                case "6":
-                    display.Text += "6";
-                    break;
-                case "7":
-                    display.Text += "7";
-                    break;
-                case "8":
-                    display.Text += "8";
-                    break;
-                case "9":
-                    display.Text += "9";
-                    break;
                 case "CE":
-                    if (display.Text.Length > 0)
-                    {
-                        display.Text = "";
+                    if (wholeEquation.Count > 0) {
+                        wholeEquation.Clear();
                     }
+                    workingSet = "";
                     break;
                 case "C":
+                    workingSet = "";
                     break;
                 case "DEL":
-                    if (display.Text.Length > 0)
+                    if (workingSet.Length > 0)
                     {
-                        display.Text = display.Text.Substring(0, display.Text.Length - 1);
+                        workingSet = workingSet.Substring(0, workingSet.Length - 1);
                     }
-                    break;
-                case "/":
-                    break;
-                case "X":
-                    break;
-                case "-":
-                    break;
-                case "+":
                     break;
                 case "=":
                     break;
                 case "+/-":
                     break;
-                case ".":
+                default:
+                    if ("0123456789.".Contains(btn.Text)) {
+                        buildWorkingSet(btn.Text);
+                    } else if ("/*-+".Contains(btn.Text)) {
+                        buildEquation(btn.Text);
+                    } else {
+                        MessageBox.Show("Warning! Invalid button " + btn.Text);
+                    }
                     break;
             }
+
+            // TODO: Fix the display of the array list  
+            // displaying the data
+            if (workingSet.Length == 0)
+            {
+                workingSet = "0";
+            }
+
+            if (wholeEquation.Count > 0)
+            {
+                display.Text = wholeEquation + "\r\n" + workingSet;
+            }
+            else
+            {
+                display.Text = workingSet;
+            }
+        }
+
+        private void buildWorkingSet (String input)
+        {
+            /* if the first number is 0 (zero) replace it with the next input number unless it is a dot (.)
+             * if it is a dot (.) add it behind the zero instead */
+            if (workingSet == "0") {
+                if (input == ".") {
+                    workingSet += input;
+                } else {
+                    workingSet = input;
+                }
+            } else if (!(input == "." && workingSet.Contains(input))) { //if decimal already exist do not add another one
+                workingSet += input;
+            }
+        }
+
+        private void buildEquation (string input)
+        {
+            if (workingSet != "0") {
+                wholeEquation.Add(workingSet);
+            }
+
+            // TODO: Add code for operational buttons
+            MessageBox.Show((String)wholeEquation[0]);
+
+            //if ("/*-+".Contains(wholeEquation[wholeEquation.Count - 1].ToString())) {
+            //    wholeEquation[wholeEquation.Count - 1] = input;
+            //} else {
+            //    wholeEquation.Add(input);
+            //}
         }
     }
 }
