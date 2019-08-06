@@ -49,6 +49,7 @@
             this.btn0 = new System.Windows.Forms.Button();
             this.btnPlusMinus = new System.Windows.Forms.Button();
             this.display = new System.Windows.Forms.Label();
+            this.equation = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnCE
@@ -334,18 +335,28 @@
             // display
             // 
             this.display.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.display.Location = new System.Drawing.Point(12, 13);
+            this.display.Location = new System.Drawing.Point(9, 50);
             this.display.Name = "display";
-            this.display.Size = new System.Drawing.Size(263, 65);
+            this.display.Size = new System.Drawing.Size(267, 28);
             this.display.TabIndex = 20;
             this.display.Text = "0";
             this.display.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // equation
+            // 
+            this.equation.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.equation.Location = new System.Drawing.Point(9, 22);
+            this.equation.Name = "equation";
+            this.equation.Size = new System.Drawing.Size(267, 28);
+            this.equation.TabIndex = 21;
+            this.equation.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(288, 417);
+            this.Controls.Add(this.equation);
             this.Controls.Add(this.display);
             this.Controls.Add(this.btnEquals);
             this.Controls.Add(this.btnDot);
@@ -396,6 +407,7 @@
         private System.Windows.Forms.Button btn0;
         private System.Windows.Forms.Button btnPlusMinus;
         private System.Windows.Forms.Label display;
+        private System.Windows.Forms.Label equation;
     }
 }
 

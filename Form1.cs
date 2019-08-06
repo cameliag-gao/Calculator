@@ -59,21 +59,25 @@ namespace Calculator
                     break;
             }
 
-            // TODO: Fix the display of the array list  
-            // displaying the data
+            // always show 0 for the input number
             if (workingSet.Length == 0)
             {
                 workingSet = "0";
             }
 
+            // display the historical input data
             if (wholeEquation.Count > 0)
             {
-                display.Text = wholeEquation + "\r\n" + workingSet;
+                equation.Text = "";
+
+                foreach (String s in wholeEquation) {
+                    equation.Text += s + " ";
+                }
+
+                display.Text = "";
             }
-            else
-            {
-                display.Text = workingSet;
-            }
+
+            display.Text = workingSet;
         }
 
         private void buildWorkingSet (String input)
@@ -93,18 +97,22 @@ namespace Calculator
 
         private void buildEquation (string input)
         {
-            if (workingSet != "0") {
-                wholeEquation.Add(workingSet);
+            int wholeEquationLastIndex;
+
+            if (workingSet.Last().ToString() == ".") {
+                workingSet = workingSet.Substring(0, workingSet.Length - 1);
             }
 
-            // TODO: Add code for operational buttons
-            MessageBox.Show((String)wholeEquation[0]);
+            wholeEquation.Add(workingSet);
+            workingSet = "";
 
-            //if ("/*-+".Contains(wholeEquation[wholeEquation.Count - 1].ToString())) {
-            //    wholeEquation[wholeEquation.Count - 1] = input;
-            //} else {
-            //    wholeEquation.Add(input);
-            //}
+            wholeEquationLastIndex = wholeEquation.Count - 1;
+
+            if ("/*-+".Contains((String)wholeEquation[wholeEquationLastIndex].ToString())) {
+                wholeEquation[wholeEquationLastIndex] = input;
+            } else {
+                wholeEquation.Add(input);
+            }
         }
     }
 }
